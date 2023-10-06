@@ -623,6 +623,20 @@ video {
   font-family: Dela Gothic One;
 }
 
+.wave-top {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./wave-top.svg");
+}
+
+.wave-bottom {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./wave-bottom.svg");
+}
+
 @media (min-width: 1024px){
   .lg\:p-56{
     padding: 14rem;
