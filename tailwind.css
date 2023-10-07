@@ -556,8 +556,24 @@ video {
   width: 100dvw;
 }
 
+.w-\[50dvw\]{
+  width: 50dvw;
+}
+
 .max-w-\[100dvw\]{
   max-width: 100dvw;
+}
+
+.max-w-\[50ch\]{
+  max-width: 50ch;
+}
+
+.max-w-\[20ch\]{
+  max-width: 20ch;
+}
+
+.max-w-\[30ch\]{
+  max-width: 30ch;
 }
 
 .basis-1\/2{
