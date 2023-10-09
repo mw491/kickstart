@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'brand': ['Dela Gothic One'],
+      'brand': ['Open Sans'],
     },
     fontSize: {
       'clamp-big': "clamp(2rem, 10vw, 10rem)",

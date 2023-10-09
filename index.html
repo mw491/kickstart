@@ -25,9 +25,9 @@
   </div>
   <div id="content" class="bg font-brand text-clamp-small">
     <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="h-[100dvh] w-[100dvw] flex items-center justify-center snap-start">
-      <p x-show="shown" x-transition.duration.1000ms class="w-[50dvw] max-w-[30ch]">At KickStart we use young enthusiasts to deliver sessions catering to student-athletes which integrates academic growth into athletic pursuits, ensuring holistic development for young sport enthusiasts.</p>
+      <p x-show="shown" x-transition.duration.1000ms class="w-[50dvw] max-w-[30ch] font-bold">At KickStart we use young enthusiasts to deliver sessions catering to student-athletes which integrates academic growth into athletic pursuits, ensuring holistic development for young sport enthusiasts.</p>
     </div>
-    <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="h-[100dvh] w-[100dvw] text-clamp-xs flex flex-wrap items-center justify-center p-24 lg:p-56 snap-start">
+    <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="h-[100dvh] w-[100dvw] text-start text-clamp-xs flex flex-wrap items-center justify-center p-24 lg:p-56 snap-start">
       <img x-show="shown" x-transition.duration.1000ms src="./chelseafc-logo.svg" alt="Chelsea FC Logo" class="basis-1/2 h-64" />
       <ul x-show="shown" x-transition.duration.1000ms class="list-disc basis-1/2">
         <li>Collaborated with Chelsea Academy to provide specialized training for young talents aged 9-15.</li>
