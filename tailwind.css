@@ -560,16 +560,12 @@ video {
   width: 50dvw;
 }
 
+.min-w-\[9ch\]{
+  min-width: 9ch;
+}
+
 .max-w-\[100dvw\]{
   max-width: 100dvw;
-}
-
-.max-w-\[50ch\]{
-  max-width: 50ch;
-}
-
-.max-w-\[20ch\]{
-  max-width: 20ch;
 }
 
 .max-w-\[30ch\]{
@@ -590,6 +586,10 @@ video {
 
 .snap-start{
   scroll-snap-align: start;
+}
+
+.list-disc{
+  list-style-type: disc;
 }
 
 .flex-col{
@@ -621,8 +621,8 @@ video {
   padding: 6rem;
 }
 
-.p-56{
-  padding: 14rem;
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -635,6 +635,10 @@ video {
 
 .text-clamp-big{
   font-size: clamp(2rem, 10vw, 10rem);
+}
+
+.text-clamp-mid{
+  font-size: clamp(1.5rem, 8vw, 6rem);
 }
 
 .text-clamp-small{

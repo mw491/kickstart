@@ -13,7 +13,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="text-center text-white">
-  <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" id="title" class="bg-black font-brand h-[100dvh] w-[100dvw] p-56 text-clamp-big flex flex-col items-center justify-center snap-start">
+  <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" id="title" class="bg-black font-brand h-[100dvh] w-[100dvw] text-clamp-big flex flex-col items-center justify-center snap-start">
     <div x-show="shown" x-transition.duration.1000ms>
       <img src="./logo.png" alt="Kickstart logo" class="max-h-[90dvh] max-w-[100dvw]" />
     </div>
@@ -30,6 +30,13 @@
     <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="h-[100dvh] w-[100dvw] flex flex-wrap items-center justify-center p-24 lg:p-56 snap-start">
       <img x-show="shown" x-transition.duration.1000ms src="./chelseafc-logo.svg" alt="Chelsea FC Logo" class="basis-1/2 h-64" />
       <p x-show="shown" x-transition.duration.1000ms class="basis-1/2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur facilisis ex eget mattis.</p>
+    </div>
+    <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="h-[100dvh] w-[100dvw] flex flex-col text-left flex-wrap items-center justify-center p-24 lg:p-56 snap-start">
+      <p x-show="shown" x-transition.duration.1000ms class="text-clamp-mid min-w-[9ch]">Contact Us</p>
+      <ul class="list-disc">
+        <li x-show="shown" x-transition.duration.1000ms>kickstart@email.com</li>
+        <li x-show="shown" x-transition.duration.1000ms>0123456789</li>
+      </ul>
     </div>
   </div>
 </body>
