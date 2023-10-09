@@ -27,9 +27,14 @@
     <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="h-[100dvh] w-[100dvw] flex items-center justify-center snap-start">
       <p x-show="shown" x-transition.duration.1000ms class="w-[50dvw] max-w-[30ch]">At KickStart we use young enthusiasts to deliver sessions catering to student-athletes which integrates academic growth into athletic pursuits, ensuring holistic development for young sport enthusiasts.</p>
     </div>
-    <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="h-[100dvh] w-[100dvw] flex flex-wrap items-center justify-center p-24 lg:p-56 snap-start">
+    <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="h-[100dvh] w-[100dvw] text-clamp-xs flex flex-wrap items-center justify-center p-24 lg:p-56 snap-start">
       <img x-show="shown" x-transition.duration.1000ms src="./chelseafc-logo.svg" alt="Chelsea FC Logo" class="basis-1/2 h-64" />
-      <p x-show="shown" x-transition.duration.1000ms class="basis-1/2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur facilisis ex eget mattis.</p>
+      <ul x-show="shown" x-transition.duration.1000ms class="list-disc basis-1/2">
+        <li>Collaborated with Chelsea Academy to provide specialized training for young talents aged 9-15.</li>
+        <li>Empowering over 100 students through personalized tutoring sessions.</li>
+        <li>Tailoring classes to individual age groups for optimal learning experiences.</li>
+        <li>Guided by a team of experienced tutors with expertise in the field.</li>
+      </ul>
     </div>
     <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="h-[100dvh] w-[100dvw] flex flex-col text-left flex-wrap items-center justify-center p-24 lg:p-56 snap-start">
       <p x-show="shown" x-transition.duration.1000ms class="text-clamp-mid min-w-[9ch]">Contact Us</p>

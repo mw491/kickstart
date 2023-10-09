@@ -645,6 +645,10 @@ video {
   font-size: clamp(1rem, 5vw, 3rem);
 }
 
+.text-clamp-xs{
+  font-size: clamp(0.25rem, 3vw, 2rem);
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
