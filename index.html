@@ -38,7 +38,7 @@
     <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="h-[100dvh] w-[100dvw] flex flex-col text-left flex-wrap items-center justify-center p-24 lg:p-56">
       <p x-show="shown" x-transition.duration.2000ms class="text-clamp-mid min-w-[9ch]">Contact Us</p>
       <ul class="list-disc">
-        <li x-show="shown" x-transition.duration.2000ms>kickstart@email.com</li>
+        <li x-show="shown" x-transition.duration.2000ms><a href="mailto:kickstart@email.com">kickstart@email.com</a></li>
         <li x-show="shown" x-transition.duration.2000ms>0123456789</li>
       </ul>
     </div>
