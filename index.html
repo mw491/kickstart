@@ -11,7 +11,7 @@
   <!-- Alpine Core -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class="text-center text-white">
+<body class="text-center text-white bg-black">
   <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" id="title" class="bg-black font-brand h-[100dvh] w-[100dvw] text-clamp-big flex flex-col items-center justify-center">
     <div x-show="shown" x-transition.duration.2000ms>
       <img src="./logo.png" alt="Kickstart logo" class="max-h-[90dvh] max-w-[100dvw]" />
@@ -22,7 +22,7 @@
       </svg>
     </a>
   </div>
-  <div id="content" class="bg font-brand text-clamp-small">
+  <div id="content" class="font-brand text-clamp-small">
     <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="h-[100dvh] w-[100dvw] flex items-center justify-center">
       <p x-show="shown" x-transition.duration.2000ms class="w-[50dvw] max-w-[30ch] font-bold">At KickStart we use young enthusiasts to deliver sessions catering to student-athletes which integrates academic growth into athletic pursuits, ensuring holistic development for young sport enthusiasts.</p>
     </div>
