@@ -5,7 +5,14 @@
 @tailwind utilities;
 
 .container {
-    @apply font-brand h-[100dvh] w-[100dvw] flex flex-col gap-14 items-center justify-center snap-y snap-mandatory;
+  @apply font-brand h-[100dvh] w-[100dvw] flex flex-col gap-14 items-center justify-center snap-y snap-mandatory;
+}
+
+.odd-child {
+  @apply bg-neutral-950/75;
+}
+.even-child {
+  @apply bg-neutral-950;
 }
 
 .bg {
