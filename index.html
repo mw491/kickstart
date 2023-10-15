@@ -23,10 +23,10 @@
     </a>
   </div>
   <div id="content" class="font-brand text-clamp-small">
-    <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="odd-child py-20 flex items-center justify-center">
+    <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="py-20 flex items-center justify-center">
       <p x-show="shown" x-transition.duration.2000ms class="w-[50dvw] max-w-[30ch] font-bold">At KickStart we use young enthusiasts to deliver sessions catering to student-athletes which integrates academic growth into athletic pursuits, ensuring holistic development for young sport enthusiasts.</p>
     </div>
-    <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="even-child py-20 text-start text-clamp-xs flex flex-wrap items-center justify-center">
+    <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="py-20 text-start text-clamp-xs flex flex-wrap items-center justify-center">
       <img x-show="shown" x-transition.duration.2000ms src="./chelseafc-logo.svg" alt="Chelsea FC Logo" class="basis-1/2 h-64" />
       <ul x-show="shown" x-transition.duration.2000ms class="list-disc basis-1/2">
         <li>Collaborated with Chelsea Academy to provide specialized training for young talents aged 9-15.</li>
@@ -35,7 +35,7 @@
         <li>Guided by a team of experienced tutors with expertise in the field.</li>
       </ul>
     </div>
-    <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="odd-child py-20 flex flex-col text-left flex-wrap items-center justify-center">
+    <div x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="py-20 flex flex-col text-left flex-wrap items-center justify-center">
       <p x-show="shown" x-transition.duration.2000ms class="text-clamp-mid min-w-[9ch]">Contact Us</p>
       <ul class="list-disc">
         <li x-show="shown" x-transition.duration.2000ms><a href="mailto:kickstart@email.com">kickstart@email.com</a></li>

@@ -664,14 +664,26 @@ video {
   font-family: Lato;
 }
 
-.odd-child{
-  background-color: rgb(10 10 10 / 0.75);
-}
-
-.even-child{
+#content div:nth-child(even){
   --tw-bg-opacity: 1;
   background-color: rgb(10 10 10 / var(--tw-bg-opacity));
 }
+
+#content div:nth-child(odd){
+  background-color: rgb(10 10 10 / 0.75);
+}
+
+/* .odd-child { */
+
+/*   @apply bg-neutral-950/75; */
+
+/* } */
+
+/* .even-child { */
+
+/*   @apply bg-neutral-950; */
+
+/* } */
 
 .bg {
   background-repeat: no-repeat;
