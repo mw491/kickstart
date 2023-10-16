@@ -588,6 +588,10 @@ video {
   max-width: 40ch;
 }
 
+.max-w-\[45ch\]{
+  max-width: 45ch;
+}
+
 .basis-1\/3{
   flex-basis: 33.333333%;
 }
