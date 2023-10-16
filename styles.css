@@ -9,10 +9,10 @@
 }
 
 #content section:nth-child(even) {
-  @apply bg-neutral-950/75;
+  @apply bg-neutral-950/95;
 }
 #content section:nth-child(odd) {
-  @apply bg-neutral-950/50;
+  @apply bg-neutral-950;
 }
 
 .white-svg {
