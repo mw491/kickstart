@@ -8,24 +8,11 @@
   @apply font-brand h-[100dvh] w-[100dvw] flex flex-col gap-14 items-center justify-center snap-y snap-mandatory;
 }
 
-#content div:nth-child(even) {
-  @apply bg-neutral-950;
-}
-#content div:nth-child(odd) {
+#content section:nth-child(even) {
   @apply bg-neutral-950/75;
 }
-/* .odd-child { */
-/*   @apply bg-neutral-950/75; */
-/* } */
-/* .even-child { */
-/*   @apply bg-neutral-950; */
-/* } */
-
-.bg {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("./low-poly-grid.svg");
+#content section:nth-child(odd) {
+  @apply bg-neutral-950/50;
 }
 
 .white-svg {
