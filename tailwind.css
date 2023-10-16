@@ -684,11 +684,11 @@ video {
   font-family: Lato;
 }
 
-#content section:nth-child(even){
+#content section:nth-child(odd){
   background-color: rgb(10 10 10 / 0.95);
 }
 
-#content section:nth-child(odd){
+#content section:nth-child(even){
   --tw-bg-opacity: 1;
   background-color: rgb(10 10 10 / var(--tw-bg-opacity));
 }

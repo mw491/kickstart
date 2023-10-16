@@ -8,10 +8,10 @@
   @apply font-brand h-[100dvh] w-[100dvw] flex flex-col gap-14 items-center justify-center snap-y snap-mandatory;
 }
 
-#content section:nth-child(even) {
+#content section:nth-child(odd) {
   @apply bg-neutral-950/95;
 }
-#content section:nth-child(odd) {
+#content section:nth-child(even) {
   @apply bg-neutral-950;
 }
 
