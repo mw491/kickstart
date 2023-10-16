@@ -13,7 +13,7 @@
 </head>
 <body class="text-center text-white">
   <!-- TITLE -->
-  <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" id="title" class="bg-black font-brand h-[100dvh] w-[100dvw] text-clamp-big flex flex-col items-center justify-center">
+  <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" id="title" class="bg-black font-brand h-[100dvh] w-[100dvw] text-clamp-big flex flex-col items-center justify-center">
     <div x-show="shown" x-transition.duration.2000ms>
       <img src="./logo.png" alt="Kickstart logo" class="max-h-[90dvh] max-w-[100dvw]" />
     </div>
@@ -28,13 +28,13 @@
   <section id="content" class="font-brand text-clamp-small">
 
     <!-- INTRO -->
-    <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="py-20 flex items-center justify-center">
+    <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" class="py-20 flex items-center justify-center">
       <p x-show="shown" x-transition.duration.2000ms class="w-[50dvw] max-w-[30ch] font-bold">At KickStart we use young enthusiasts to deliver sessions catering to student-athletes which integrates academic growth into athletic pursuits, ensuring holistic development for young sport enthusiasts.</p>
     </section>
 
 
     <!-- CHELSEA -->
-    <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="py-20 text-start text-clamp-xs flex flex-wrap items-center justify-center">
+    <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" class="py-20 text-start text-clamp-xs flex flex-wrap items-center justify-center">
       <div class="max-w-[70ch] flex flex-wrap items-center justify-center">
         <img x-show="shown" x-transition.duration.2000ms src="./chelseafc-logo.svg" alt="Chelsea FC Logo" class="basis-1/3 h-64" />
         <ul x-show="shown" x-transition.duration.2000ms class="list-disc basis-2/3">
@@ -47,25 +47,58 @@
     </section>
 
 
-    <!-- QUOTE -->
-    <section x-data="{ shown: false }" x-intercect.threshold.10="shown = true" x-intersect:leave.threshold.10 = "shown = false" class="py-20 text-clamp-xs flex items-center justify-center">
-      <div class="flex flex-wrap items-center justify-center gap-3">
-        <svg class="basis-1/3" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16"> <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/> </svg>
-        <div class="w-[50vw] max-w[30ch] basis-2/3">
-          <p class="italic">
-            “KickStart’s approach to teaching is fresh and being young, they really knows how to engage with my son. This in turn has helped accelerate my sons learning as he looks forward to the sessions. The results have been amazing, and I would not hesitate to recommend KickStart Education”
-          </p>
-          <br />
-          <p class="font-bold">
-            - Mihaela Ghizdeanu (Mother of player at Arsenal Academy)
-          </p>
-        </div>
+    <!-- TAILORS TO STUDENT-ATHLETES -->
+    <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" class="py-20 text-start text-clamp-xs flex flex-wrap items-center justify-center">
+      <div class="max-w-[40ch]" x-show="shown" x-transition.duration.2000ms>
+        <p class="font-bold text-clamp-small">
+          Real-World Applications
+        </p>
+        <ul class="list-disc">
+          <li>We relate academic concepts to sports wherever possible</li>
+          <li>For example, using statistics in sports to explain difficult concepts</li>
+          <li>Writing Zander Letters to imporve Engligh and learn to take reponsibility for actions</li>
+        </ul>
+      </div>
+    </section>
+
+    <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" class="py-20 text-start text-clamp-xs flex flex-wrap items-center justify-center">
+      <div class="max-w-[40ch]" x-show="shown" x-transition.duration.2000ms>
+        <p class="font-bold text-clamp-small">
+          Summer and Off-Season Programmes
+        </p>
+        <ul class="list-disc">
+          <li>Kickstart offer specialised programs during the off-season and winter/summer breaks to help student-athletes catch up or get ahead academically</li>
+          <li>More info later</li>
+        </ul>
+      </div>
+    </section>
+    <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" class="py-20 text-start text-clamp-xs flex flex-wrap items-center justify-center">
+      <div class="max-w-[40ch]" x-show="shown" x-transition.duration.2000ms>
+        <p class="font-bold text-clamp-small">
+          Short, Intense Study Sessions
+        </p>
+        <ul class="list-disc">
+          <li>Given the students tight schedules, our sessions are short but intense, focusing on critical concepts</li>
+          <li>We use active learning techniques to maximise retention in a short time</li>
+        </ul>
+      </div>
+    </section>
+    <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" class="py-20 text-start text-clamp-xs flex flex-wrap items-center justify-center">
+      <div class="max-w-[40ch]" x-show="shown" x-transition.duration.2000ms>
+        <p class="font-bold text-clamp-small">
+          Young Tutors
+        </p>
+        <ul class="list-disc">
+          <li>Our tutors understand the athletes' unique challenges and provide constant motivation</li>
+          <li>Sessions become enjoyable compared to traditional learning</li>
+          <li>We celebrate their academic and athletic achievements to boost their confidence</li>
+        </ul>
       </div>
     </section>
 
 
     <!-- CONTACTS -->
-    <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" x-intersect:leave.threshold.10="shown = false" class="py-20 flex flex-col text-left flex-wrap items-center justify-center">
+    <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" class="py-20 flex flex-col text-left flex-wrap items-center justify-center">
       <p x-show="shown" x-transition.duration.2000ms class="text-clamp-mid min-w-[9ch]">Contact Us</p>
       <ul class="list-disc">
         <li x-show="shown" x-transition.duration.2000ms><a href="mailto:kickstart@email.com">kickstart@email.com</a></li>
