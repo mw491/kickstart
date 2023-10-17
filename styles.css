@@ -4,16 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply bg-black;
+}
+
 .container {
   @apply font-brand h-[100dvh] w-[100dvw] flex flex-col gap-14 items-center justify-center snap-y snap-mandatory;
 }
 
-#content section:nth-child(odd) {
-  @apply bg-neutral-950/95;
-}
-#content section:nth-child(even) {
-  @apply bg-neutral-950;
-}
+/* #content section:nth-child(odd) { */
+/*   @apply bg-neutral-950/95; */
+/* } */
+/* #content section:nth-child(even) { */
+/*   @apply bg-neutral-950; */
+/* } */
 
 .white-svg {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);
