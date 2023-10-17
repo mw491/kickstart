@@ -123,7 +123,7 @@
     <!-- CONTACTS -->
     <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" class="py-20 flex flex-col text-left flex-wrap items-center justify-center">
       <p x-show="shown" x-transition.duration.1500ms class="text-clamp-mid min-w-[9ch]">Contact Us</p>
-      <ul class="list-disc">
+      <ul class="list-disc text-clamp-small">
         <li x-show="shown" x-transition.duration.1500ms><a href="mailto:kickstart@email.com">kickstart@email.com</a></li>
         <li x-show="shown" x-transition.duration.1500ms>0123456789</li>
       </ul>
