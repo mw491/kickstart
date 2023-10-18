@@ -13,9 +13,9 @@
 </head>
 <body class="text-center text-white">
   <!-- TITLE -->
-  <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" id="title" class="bg-black font-brand h-[100dvh] w-[100dvw] text-clamp-big flex flex-col items-center justify-center">
+  <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" id="title" class="bg-black p-0 font-brand h-[100vh] w-[100vw] flex flex-col items-center justify-center">
     <div x-show="shown" x-transition.duration.1500ms>
-      <img src="./logo.png" alt="Kickstart logo" class="max-h-[90dvh] max-w-[100dvw]" />
+      <img src="./logo.png" alt="Kickstart logo" class="max-h-[85vh] max-w-[100vw]" />
     </div>
     <a x-show="shown" x-transition.duration.1500ms href="#content">
       <svg width="70" height="55" viewBox="-2.5 -5 75 60" preserveAspectRatio="none">
@@ -29,7 +29,7 @@
 
     <!-- INTRO -->
     <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" class="py-20 flex items-center justify-center">
-      <p x-show="shown" x-transition.duration.1500ms class="w-[50dvw] max-w-[30ch] font-bold">At KickStart we use young enthusiasts to deliver sessions catering to student-athletes which integrates academic growth into athletic pursuits, ensuring holistic development for young sport enthusiasts.</p>
+      <p x-show="shown" x-transition.duration.1500ms class="w-[50vw] max-w-[30ch] font-bold">At KickStart we use young enthusiasts to deliver sessions catering to student-athletes which integrates academic growth into athletic pursuits, ensuring holistic development for young sport enthusiasts.</p>
     </section>
 
 
@@ -48,6 +48,60 @@
 
 
     <!-- TAILORS TO STUDENT-ATHLETES -->
+    <section class="flex flex-wrap items-start justify-center gap-16">
+      <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" class="py-20 text-start text-clamp-xs flex flex-wrap items-center justify-center">
+        <div class="max-w-[40ch]" x-show="shown" x-transition.duration.1500ms>
+          <p class="font-bold text-clamp-small">
+            Personalised Learning Plans
+          </p>
+          <ul class="list-disc">
+            <li>We assess each student-athlete's academic strengths and weaknesses</li>
+            <li>We then design a topic schedule that caters to their specific needs, ensuring that they stay on track academically</li>
+          </ul>
+        </div>
+      </section>
+
+      <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" class="py-20 text-start text-clamp-xs flex flex-wrap items-center justify-center">
+        <div class="max-w-[40ch]" x-show="shown" x-transition.duration.1500ms>
+          <p class="font-bold text-clamp-small">
+            Holistic Development
+          </p>
+          <ul class="list-disc">
+            <li>Beyond academics, we focus on developing life skills such as leadership, teamwork, and resilience</li>
+            <li>Leadership – student led sessions</li>
+            <li>Teamwork – in class group projects</li>
+            <li>Resilience – mock exams</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <section class="flex flex-wrap items-start justify-center gap-16">
+      <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" class="py-20 text-start text-clamp-xs flex flex-wrap items-center justify-center">
+        <div class="max-w-[40ch]" x-show="shown" x-transition.duration.1500ms>
+          <p class="font-bold text-clamp-small">
+            Time Management and Organisation
+          </p>
+          <ul class="list-disc">
+            <li>We teach how to effectively manage time between extra-curricular activities and academics</li>
+            <li>We offer workshops on organisational skills and efficient study techniques</li>
+          </ul>
+        </div>
+      </section>
+
+      <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" class="py-20 text-start text-clamp-xs flex flex-wrap items-center justify-center">
+        <div class="max-w-[40ch]" x-show="shown" x-transition.duration.1500ms>
+          <p class="font-bold text-clamp-small">
+            Use of Technology
+          </p>
+          <ul class="list-disc">
+            <li>At KickStart we utilise online platforms and apps that allow student-athletes to learn on the go</li>
+            <li>Atom learning</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
     <section class="flex flex-wrap items-start justify-center gap-16">
       <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" class="py-20 text-start text-clamp-xs flex flex-wrap items-center justify-center">
         <div class="max-w-[40ch]" x-show="shown" x-transition.duration.1500ms>
