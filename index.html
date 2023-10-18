@@ -13,7 +13,7 @@
 </head>
 <body class="text-center text-white">
   <!-- TITLE -->
-  <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" id="title" class="bg-black p-0 font-brand h-[100vh] w-[100vw] flex flex-col items-center justify-center">
+  <section x-data="{ shown: false }" x-intersect.threshold.10="shown = true" id="title" class="bg-black p-0 font-brand h-[100vh] max-w-[100vw] flex flex-col items-center justify-center">
     <div x-show="shown" x-transition.duration.1500ms>
       <img src="./logo.png" alt="Kickstart logo" class="max-h-[85vh] max-w-[100vw]" />
     </div>
